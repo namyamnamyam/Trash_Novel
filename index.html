@@ -3,232 +3,107 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#090a0f" />
-  <meta name="description" content="내가 폐기한 캐릭터들이 최종보스가 되었다 - 세계관 소개 프로토타입" />
-  <title>내가 폐기한 캐릭터들이 최종보스가 되었다.</title>
+  <meta name="theme-color" content="#0b0c10" />
+  <meta name="description" content="내가 버린 캐릭터들이 최종보스가 되었다 - 세계관 소개" />
+  <title>내가 버린 캐릭터들이 최종보스가 되었다</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="noise" aria-hidden="true"></div>
-  <header class="topbar">
-    <a class="brand" href="#overview" aria-label="처음으로 이동">
-      <span class="brand-mark">TRASH//NOVEL</span>
-      <span class="brand-title">내가 폐기한 캐릭터들이 최종보스가 되었다.</span>
-    </a>
-    <nav class="nav" aria-label="주요 메뉴">
-      <a href="#overview">세계관 개요</a>
-      <a href="#world">세계관 설명</a>
-      <a href="#characters">인물 카드</a>
-    </nav>
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="kicker">MODERN FANTASY · HUNTER · NOVEL BECOMES REALITY</p>
+      <h1>내가 버린 캐릭터들이<br /><span>최종보스가 되었다</span></h1>
+      <p class="hero-copy">
+        어젯밤 완결한 무명 소설이 다음 날 현실이 됐다.<br />
+        그런데 현실이 된 건, 완성한 이야기만이 아니었다.
+      </p>
+      <a class="scroll-link" href="#overview">세계관 보기 ↓</a>
+    </div>
   </header>
 
   <main>
-    <!-- 1. 세계관 개요 -->
-    <section id="overview" class="hero section-shell">
-      <div class="hero-copy reveal">
-        <p class="eyebrow">WORLD INTRODUCTION / PROTOTYPE</p>
-        <h1>어젯밤 완결한<br /><span>내 소설이 현실이 됐다.</span></h1>
-        <p class="hero-lead">
-          단 3명만 알고 있던 무명 웹소설 <strong>《만년 F급 헌터, 무한을 얻다》</strong>.
-          완결 다음 날, 전 인류에게 상태창이 떠오르고 전 세계에 게이트가 발생한다.
-          문제는 현실이 된 것이 <em>완성본뿐만이 아니라는 것.</em>
+    <section id="overview" class="section">
+      <div class="section-head">
+        <p class="section-number">01</p>
+        <div>
+          <p class="eyebrow">WORLD OVERVIEW</p>
+          <h2>세계관 개요</h2>
+        </div>
+      </div>
+
+      <div class="overview-box">
+        <p>
+          작가인 <strong>{{user}}</strong>가 직접 쓴 무명 웹소설 <strong>《만년 F급 헌터, 무한을 얻다》</strong>가
+          완결 다음 날 현실이 된다. 기존 현대 사회는 그대로 남아 있지만, 전 인류에게 상태창이 생기고 세계 곳곳에
+          게이트가 출현하면서 소설 속 헌터·마수·마법·이종족과 판타지 설정들이 현실 위에 겹쳐지기 시작한다.
         </p>
-        <div class="hero-actions">
-          <a class="btn primary" href="#world">세계관 확인</a>
-          <a class="btn ghost" href="#characters">인물 보기</a>
-        </div>
+        <p>
+          문제는 최종 연재본뿐 아니라 <strong>작가가 만들었다가 폐기한 캐릭터와 종족, 국가, 능력, 초안 설정까지 현실화</strong>된다는 것.
+          폐기 인물들은 자신이 만들어지고 버려졌다는 사실과 {{user}}가 자신들의 창작자라는 사실을 알고 있다.
+          밸런스가 완성되기 전에 삭제된 존재들이 원작의 사건과 미래를 뒤틀며, 작가조차 알 수 없는 새로운 이야기가 시작된다.
+        </p>
       </div>
 
-      <div class="hero-panel reveal" aria-label="세계관 핵심 정보">
-        <div class="system-window">
-          <div class="window-head">
-            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-            <span class="window-title">SYSTEM // REALITY MERGE</span>
-          </div>
-          <div class="window-body">
-            <p class="system-alert">[ 시스템이 활성화됩니다. ]</p>
-            <dl class="system-list">
-              <div><dt>원작</dt><dd>《만년 F급 헌터, 무한을 얻다》</dd></div>
-              <div><dt>분량</dt><dd>312화 완결</dd></div>
-              <div><dt>현실화 범위</dt><dd>전 세계</dd></div>
-              <div><dt>원작 지식 보유자</dt><dd>3명</dd></div>
-              <div><dt>첫 게이트</dt><dd>서울 폐역형 C급</dd></div>
-              <div><dt>변수</dt><dd class="danger">폐기 설정 현실화</dd></div>
-            </dl>
-          </div>
-        </div>
-      </div>
-
-      <div class="overview-grid reveal">
-        <article class="overview-card">
-          <span class="index">01</span>
-          <h2>현대 위에 덮인 판타지</h2>
-          <p>현실이 사라진 것이 아니다. 기존 현대 사회 위에 상태창, 직업, 스킬, 마수, 마법과 게이트가 추가된다.</p>
-        </article>
-        <article class="overview-card">
-          <span class="index">02</span>
-          <h2>작가만 아는 두 번째 원작</h2>
-          <p>{{user}}는 공개 연재본뿐 아니라 초안, 수정 전 설정, 삭제된 인물과 국가까지 기억한다.</p>
-        </article>
-        <article class="overview-card warning-card">
-          <span class="index">03</span>
-          <h2>버린 설정이 돌아온다</h2>
-          <p>밸런스가 끝나기도 전에 폐기된 존재들이 게이트를 통해 현실로 나타나며, 원작의 미래를 뒤틀기 시작한다.</p>
-        </article>
+      <div class="overview-points">
+        <article><strong>현실화</strong><span>현대 사회 위에 소설의 시스템과 판타지 요소가 나타난다.</span></article>
+        <article><strong>폐기 설정</strong><span>삭제된 인물·종족·국가·능력까지 게이트를 통해 돌아온다.</span></article>
+        <article><strong>작가의 변수</strong><span>{{user}}는 원작과 초안을 알지만, 현실의 전개는 더 이상 원작 그대로가 아니다.</span></article>
       </div>
     </section>
 
-    <!-- 2. 세계관 설명 -->
-    <section id="world" class="world section-shell">
-      <div class="section-heading reveal">
-        <p class="eyebrow">WORLD DATABASE</p>
-        <h2>세계관 설명</h2>
-        <p>원작, 현실화, 폐기 설정, 게이트와 성장 시스템이 하나의 세계에서 동시에 작동한다.</p>
+    <section id="novel" class="section novel-section">
+      <div class="section-head">
+        <p class="section-number">02</p>
+        <div>
+          <p class="eyebrow">ORIGINAL NOVEL</p>
+          <h2>원작 줄거리</h2>
+        </div>
       </div>
 
-      <div class="lore-layout">
-        <article class="lore-block feature reveal">
-          <div class="lore-label">ORIGINAL NOVEL</div>
-          <h3>《만년 F급 헌터, 무한을 얻다》</h3>
-          <p>
-            만년 F급 헌터 <strong>한서린</strong>이 서울 폐역형 C급 게이트에서 동료들을 살리기 위해 홀로 남고,
-            히든 성장형 F급 직업 <strong>「무한」</strong>을 획득하면서 시작되는 정석 성장형 헌터 소설.
-          </p>
-          <p>
-            「무한」은 모든 직업의 스킬을 습득하고, 획득한 스킬을 합성·진화·초월할 수 있다.
-            원작의 마지막에는 한서린이 세계 멸망급 SSS급 게이트를 홀로 클리어하며 이야기가 끝난다.
-          </p>
-          <div class="tag-row">
-            <span>현대 판타지</span><span>정통 판타지</span><span>헌터</span><span>성장</span><span>312화</span>
-          </div>
-        </article>
-
-        <article class="lore-block reveal">
-          <div class="lore-label">REALITY MANIFESTATION</div>
-          <h3>소설의 현실화</h3>
-          <p>
-            완결 다음 날 전 세계 사람들에게 상태창이 생기고 현실 곳곳에 게이트가 발생한다.
-            기존 사회는 유지되지만 소설 속 시스템과 판타지 요소가 현실 위에 덧씌워진다.
-          </p>
-          <ul class="clean-list">
-            <li>전 인류 상태창 획득</li>
-            <li>전 세계 게이트 발생</li>
-            <li>마수·마법·이종족·판타지 설정 현실화</li>
-            <li>현실 정부와 사회는 초기 혼란 속에서 대응 시작</li>
-          </ul>
-        </article>
-
-        <article class="lore-block danger-block reveal">
-          <div class="lore-label">DISCARDED DATA</div>
-          <h3>폐기 설정</h3>
-          <p>
-            최종 연재본에서 삭제되거나 채택되지 않은 캐릭터, 종족, 국가, 능력, 초안과 수정 전 설정까지 함께 현실화된다.
-            상당수는 밸런스 조정 전에 버려져 최대 출력·범위·제약이 제대로 정의되지 않았다.
-          </p>
-          <ul class="clean-list">
-            <li>기존 보스를 대체하거나 함께 등장 가능</li>
-            <li>폐기된 지역·국가가 게이트 전체를 변형 가능</li>
-            <li>게이트 밖 현실로 나온 뒤에도 독립적으로 활동 가능</li>
-            <li>폐기 인물은 자신이 삭제됐다는 사실과 창작자를 인식</li>
-          </ul>
-        </article>
-
-        <article class="lore-block reveal">
-          <div class="lore-label">GATE SYSTEM</div>
-          <h3>게이트 & 브레이크</h3>
-          <p>게이트 내부 환경은 숲, 동굴, 사막, 도시 등으로 다양하며 기본 클리어 조건은 보스 처치다.</p>
-          <div class="rank-strip" aria-label="등급 체계">
-            <span>F</span><span>E</span><span>D</span><span>C</span><span>B</span><span>A</span><span>S</span><span>SS</span><span>SSS</span>
-          </div>
-          <p class="mini-note">7일 이내 미클리어 시 브레이크 발생. 내부 마수가 현실로 방출된다.</p>
-        </article>
-
-        <article class="lore-block reveal">
-          <div class="lore-label">GROWTH SYSTEM</div>
-          <h3>성장 시스템</h3>
-          <div class="stat-grid">
-            <span>근력</span><span>민첩</span><span>마력</span><span>운</span>
-          </div>
-          <p>
-            최대 레벨 제한은 없으며 레벨업마다 3SP를 획득한다. 5레벨 이후 조건에 맞는 직업 후보가 등장하고,
-            히든·특수 직업은 레벨과 무관하게 특정 업적이나 조건으로 획득할 수 있다.
-          </p>
-          <p class="mini-note">공용 등급: F → E → D → C → B → A → S → SS → SSS</p>
-        </article>
-
-        <article class="lore-block reveal">
-          <div class="lore-label">AUTHOR UNIQUE</div>
-          <h3>SSS급 유일 스킬 「작가의 눈」</h3>
-          <p>
-            오직 {{user}}에게만 주어진 원작에 존재하지 않는 스킬. 다른 존재의 상태창을 열람할 수 있지만,
-            정보를 직접 수정하거나 상대에게 강제로 영향을 주지는 못한다.
-          </p>
-          <p class="mini-note">{{user}}에게 이 스킬 이외의 추가적인 현실화 특전은 없다.</p>
-        </article>
-      </div>
-
-      <article class="first-gate reveal">
-        <div>
-          <p class="eyebrow">FIRST DIVERGENCE</p>
-          <h3>첫 번째 게이트에서 원작이 무너진다.</h3>
+      <div class="novel-card">
+        <div class="novel-meta">
+          <span>《만년 F급 헌터, 무한을 얻다》</span>
+          <span>총 312화 · 완결</span>
         </div>
-        <div class="timeline">
-          <div class="timeline-item normal">
-            <span>원작</span>
-            <p>한서린 일행 진입 → 고블린 대장과 조우 → 동료 탈출 → 한서린 홀로 잔류 → 「무한」 획득</p>
-          </div>
-          <div class="timeline-arrow">↓</div>
-          <div class="timeline-item broken">
-            <span>현실</span>
-            <p>고블린 대장 실종 → 폐기 다크엘프 「무명」이 보스 판정 획득 → 무명이 공격하지 않음 → 한서린의 각성 루트 붕괴</p>
-          </div>
-        </div>
-      </article>
-
-      <div class="society reveal">
-        <div>
-          <p class="eyebrow">REAL WORLD RESPONSE</p>
-          <h3>현실 사회의 대응</h3>
-        </div>
-        <div class="society-grid">
-          <article><strong>대한민국 헌터 협회</strong><p>현실화 직후 급조된 초기 기관. 헌터 등록, 신원 확인, 게이트 정보와 사고 기록부터 담당한다.</p></article>
-          <article><strong>미등록 능력자</strong><p>능력을 보유했지만 협회에 등록하지 않은 사람. 미등록 자체가 곧 범죄는 아니다.</p></article>
-          <article><strong>미등록 헌터</strong><p>협회 등록 없이 게이트 공략이나 사냥 등 실질적인 헌터 활동을 하는 사람.</p></article>
-          <article><strong>불법 헌터</strong><p>능력이나 헌터 활동을 이용해 범죄를 저지르는 사람. 사회 안정 이후 협회의 관리 기능이 확대되는 원인이 된다.</p></article>
-        </div>
+        <p>
+          만년 F급 헌터 <strong>한서린</strong>은 서울의 폐역형 C급 게이트에 파티원들과 진입한다.
+          공략 도중 고블린 무리와 보스 「고블린 대장」 때문에 파티가 위기에 빠지고, 한서린은 동료들을 먼저 탈출시키기 위해 홀로 남아 시간을 번다.
+        </p>
+        <p>
+          죽기 직전까지 버틴 행동으로 숨겨진 업적을 달성한 한서린은 F급 히든 성장형 직업 <strong>「무한」</strong>을 획득한다.
+          「무한」은 다른 직업의 스킬까지 습득하고, 얻은 스킬을 합성·진화·초월할 수 있는 특수 직업이다.
+        </p>
+        <p>
+          이후 한서린은 수많은 게이트를 공략하며 빠르게 성장하고, 마침내 세계 최강자 반열에 오른다.
+          원작의 마지막에는 인류를 멸망시킬 SSS급 게이트에 홀로 진입해 이를 클리어하며 세계를 구한다.
+        </p>
       </div>
     </section>
 
-    <!-- 3. 인물 카드 -->
-    <section id="characters" class="characters section-shell">
-      <div class="section-heading reveal">
-        <p class="eyebrow">CHARACTER ARCHIVE</p>
-        <h2>인물 카드</h2>
-        <p>원작 인물, 현실 독자, 폐기 인물, 현실 적응자와 이름조차 없는 최종 존재.</p>
-      </div>
-
-      <div class="character-tools reveal">
-        <div class="filters" role="group" aria-label="인물 분류 필터">
-          <button class="filter active" data-filter="all">전체</button>
-          <button class="filter" data-filter="original">원작</button>
-          <button class="filter" data-filter="reader">독자</button>
-          <button class="filter" data-filter="discarded">폐기</button>
-          <button class="filter" data-filter="reality">현실</button>
-          <button class="filter" data-filter="anomaly">최종 존재</button>
+    <section id="characters" class="section characters-section">
+      <div class="section-head">
+        <p class="section-number">03</p>
+        <div>
+          <p class="eyebrow">CHARACTERS</p>
+          <h2>주요 인물</h2>
         </div>
-        <label class="search-box">
-          <span>SEARCH</span>
-          <input id="characterSearch" type="search" placeholder="이름 / 직업 / 능력 검색" autocomplete="off" />
-        </label>
       </div>
 
-      <div id="characterGrid" class="character-grid" aria-live="polite"></div>
+      <div class="filter-row" aria-label="인물 분류">
+        <button class="filter active" data-filter="all">전체</button>
+        <button class="filter" data-filter="original">원작</button>
+        <button class="filter" data-filter="reader">독자</button>
+        <button class="filter" data-filter="discarded">폐기 인물</button>
+        <button class="filter" data-filter="reality">현실</button>
+        <button class="filter" data-filter="hidden">최종 존재</button>
+      </div>
+
+      <div id="characterGrid" class="character-grid"></div>
     </section>
   </main>
 
   <footer>
-    <p>TRASH//NOVEL WORLD ARCHIVE — PROTOTYPE</p>
-    <a href="#overview">TOP ↑</a>
+    <p>TRASH NOVEL · WORLD INTRODUCTION</p>
   </footer>
 
   <script src="script.js"></script>
