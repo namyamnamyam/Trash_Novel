@@ -1,6 +1,7 @@
 const characters = [
   {
     name: "한서린",
+    image: "images/Han Seorin_portrait.webp",
     category: "original",
     type: "원작 인물",
     badge: "주인공",
@@ -10,6 +11,7 @@ const characters = [
   },
   {
     name: "서유리",
+    image: "images/Seo Yuri_portrait.webp",
     category: "original",
     type: "원작 인물",
     badge: "C급",
@@ -19,6 +21,7 @@ const characters = [
   },
   {
     name: "한서윤",
+    image: "images/Han Seoyoon_portrait.webp",
     category: "original",
     type: "원작 인물",
     badge: "S급",
@@ -28,6 +31,7 @@ const characters = [
   },
   {
     name: "윤하린",
+    image: "images/Yoon Harin_portrait.webp",
     category: "reader",
     type: "원작 독자",
     badge: "3회 완독",
@@ -37,6 +41,7 @@ const characters = [
   },
   {
     name: "서유나",
+    image: "images/Seo Yuna_portrait.webp",
     category: "reader",
     type: "원작 독자",
     badge: "1회 속독",
@@ -46,6 +51,7 @@ const characters = [
   },
   {
     name: "무명",
+    image: "images/Nameless_portrait.webp",
     category: "discarded",
     type: "폐기 인물",
     badge: "첫 등장",
@@ -55,6 +61,7 @@ const characters = [
   },
   {
     name: "카야 사하르",
+    image: "images/Kaya Sahar_portrait.webp",
     category: "discarded",
     type: "폐기 인물",
     badge: "하사신 대장",
@@ -64,6 +71,7 @@ const characters = [
   },
   {
     name: "한시온",
+    image: "images/Han Sion_portrait.webp",
     category: "discarded",
     type: "폐기 인물",
     badge: "중간보스",
@@ -73,6 +81,7 @@ const characters = [
   },
   {
     name: "서하랑",
+    image: "images/Seo Harang_portrait.webp",
     category: "discarded",
     type: "폐기 인물",
     badge: "룬 사용자",
@@ -82,6 +91,7 @@ const characters = [
   },
   {
     name: "차시연",
+    image: "images/Cha Siyeon_portrait.webp",
     category: "discarded",
     type: "폐기 인물",
     badge: "최초 주인공",
@@ -91,6 +101,7 @@ const characters = [
   },
   {
     name: "윤시아",
+    image: "images/Yoon Sia_portrait.webp",
     category: "reality",
     type: "현실 인물",
     badge: "아이돌",
@@ -100,6 +111,7 @@ const characters = [
   },
   {
     name: "이다현",
+    image: "images/Lee Dahyun_portrait.webp",
     category: "reality",
     type: "현실 인물",
     badge: "회사원",
@@ -109,6 +121,7 @@ const characters = [
   },
   {
     name: "이름 없는 현자",
+    image: "images/Nameless Sage_portrait.webp",
     category: "hidden",
     type: "최종 존재",
     badge: "이름 없음",
@@ -128,15 +141,20 @@ function renderCharacters(filter = "all") {
 
   grid.innerHTML = visible.map(character => `
     <article class="character-card">
-      <div class="card-top">
-        <span class="card-type">${character.type}</span>
-        <span class="card-badge">${character.badge}</span>
+      <div class="character-image-wrap">
+        <img class="character-image" src="${encodeURI(character.image)}" alt="${character.name} 캐릭터 일러스트" loading="lazy" />
       </div>
-      <h3>${character.name}</h3>
-      <p class="card-sub">${character.sub}</p>
-      <p class="card-description">${character.description}</p>
-      <div class="card-tags">
-        ${character.tags.map(tag => `<span>${tag}</span>`).join("")}
+      <div class="character-card-body">
+        <div class="card-top">
+          <span class="card-type">${character.type}</span>
+          <span class="card-badge">${character.badge}</span>
+        </div>
+        <h3>${character.name}</h3>
+        <p class="card-sub">${character.sub}</p>
+        <p class="card-description">${character.description}</p>
+        <div class="card-tags">
+          ${character.tags.map(tag => `<span>${tag}</span>`).join("")}
+        </div>
       </div>
     </article>
   `).join("");
