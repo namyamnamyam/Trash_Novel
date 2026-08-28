@@ -185,10 +185,11 @@ h2 {
   gap: 14px;
 }
 .character-card {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  min-height: 290px;
-  padding: 24px;
+  min-height: 520px;
+  padding: 0;
   background: var(--panel);
   border: 1px solid var(--line);
   border-radius: 18px;
@@ -197,6 +198,30 @@ h2 {
 .character-card:hover {
   transform: translateY(-3px);
   border-color: rgba(255,255,255,.18);
+}
+.character-image-wrap {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: #0f1117;
+  border-bottom: 1px solid var(--line);
+}
+.character-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transition: transform .25s ease;
+}
+.character-card:hover .character-image {
+  transform: scale(1.025);
+}
+.character-card-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 22px 24px 24px;
 }
 .card-top {
   display: flex;
@@ -218,7 +243,7 @@ h2 {
   font-size: 11px;
 }
 .character-card h3 {
-  margin: 22px 0 6px;
+  margin: 18px 0 6px;
   font-size: 25px;
   letter-spacing: -.03em;
 }
